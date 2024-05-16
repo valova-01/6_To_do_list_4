@@ -1,0 +1,115 @@
+:root {
+	--primary-color: #3498db;
+	--success-color: #4caf50;
+	--success-hover-color: #45a049;
+	--font-size-large: 20px;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	height: calc(100vh - 40px);
+	overflow-y: auto;
+}
+
+.title {
+	font-size: 3em;
+	margin-bottom: 50px;
+}
+
+h2 {
+	font-size: 2em;
+	color: var(--primary-color);
+}
+
+li a {
+	font-size: 1.5em;
+	color: var(--primary-color);
+	text-decoration: none;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+li a:hover {
+	text-decoration: underline;
+}
+
+.showButton,
+.inputField {
+	padding: 10px 20px;
+	font-size: var(--font-size-large);
+	border: none;
+	border-radius: 20px;
+	transition: background-color 0.3s;
+	margin-bottom: 10px;
+}
+
+.showButton {
+	background-color: var(--success-color);
+	color: white;
+}
+
+.showButton:hover {
+	background-color: var(--success-hover-color);
+}
+
+.inputField {
+	border: 1px solid #ccc;
+}
+
+.todoList {
+	list-style: none;
+	padding-left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.todoList li {
+	font-size: 25px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+}
+
+.errorPage {
+	text-align: center;
+	padding: 20px;
+}
+
+.backButton {
+	position: fixed;
+	bottom: 600px;
+	left: 275px;
+	font-size: 1em;
+	padding: 10px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	border-radius: 20px;
+	background-color: var(--success-color);
+}
+
+.backButton:hover {
+	background-color: var(--success-hover-color);
+}
+
+.linkContainer {
+	margin-top: 20px;
+	font-size: var(--font-size-large);
+	font-weight: bold;
+}
+
+.linkContainer a {
+	color: var(--primary-color);
+	text-decoration: none;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+.linkContainer a:hover {
+	text-decoration: underline;
+}
